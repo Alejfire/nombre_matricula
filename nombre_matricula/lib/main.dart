@@ -8,10 +8,11 @@ class MiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mi Información',
+      title: 'Mi Nombre y mi Matrícula',
       home: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 120, 8, 8), 
         appBar: AppBar(
-          title: Text('Datos Personales'),
+          title: Text('Nombre y Matrícula'),
         ),
         body: Center(
           child: Column(
@@ -19,12 +20,12 @@ class MiApp extends StatelessWidget {
             children: <Widget>[
               Text(
                 'Nombre: Alejandro Gómez',
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(fontSize: 40),
               ),
-              SizedBox(height: 20), // Espacio entre los textos
+              SizedBox(height: 40),
               Text(
                 'Matrícula: 23-0573',
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(fontSize: 40),
               ),
             ],
           ),
